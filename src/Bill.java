@@ -1,3 +1,4 @@
+package src;
 public class Bill{
     public static void main(String[] args) {
         bigBill game = new bigBill("Lenzerheide");

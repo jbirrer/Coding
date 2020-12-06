@@ -1,5 +1,4 @@
-import java.util.*;
-
+package src;
 public class Player {
     double spent;
     String name;

@@ -4,5 +4,6 @@ public class Bill{
         if(game.totalcost != 0)
         game.calculateForAll();
         //test
+        //test2
     }
 }

@@ -5,9 +5,12 @@ public class bigBill {
     int players;
     ArrayList<Player> AL;
     double totalPerPlayer;
+    String edition;
 
-    public bigBill(){
+    public bigBill(String edition){
+        this.edition = edition;
         this.AL = new ArrayList<Player>();
+        System.out.println("Willkommen zu Joël's Bill Splitter Tool! Edition " + this.edition);
     }
 
     public void setTotalPerPlayer(){

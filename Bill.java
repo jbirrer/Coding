@@ -3,5 +3,6 @@ public class Bill{
         bigBill game = new bigBill("Lenzerheide");
         if(game.totalcost != 0)
         game.calculateForAll();
+        //test
     }
 }

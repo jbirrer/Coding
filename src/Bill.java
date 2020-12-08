@@ -6,7 +6,7 @@ public class Bill{
         Player joel = new Player("joel", game);
         Player andri = new Player("andri", game);
         Player julia = new Player("julia", game);
-
+        
         
         meli.add(98.50);
         

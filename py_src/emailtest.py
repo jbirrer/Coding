@@ -6,7 +6,7 @@ message = f.read()
 
 
 port = 465
-password = "Joel7Zoe1%"
+password = "python##69"
 
 context = ssl.create_default_context()
 

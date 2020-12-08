@@ -2,9 +2,16 @@ package src;
 public class Bill{
     public static void main(String[] args) {
         bigBill game = new bigBill("Lenzerheide");
+        Player meli = new Player("meli", game);
+        Player joel = new Player("joel", game);
+        Player andri = new Player("andri", game);
+        Player julia = new Player("julia", game);
+
+        
+        meli.add(98.50);
+        
+
         if(game.totalcost != 0)
-        game.calculateForAll();
-        //test
-        //test2
+            game.calculateForAll();
     }
 }

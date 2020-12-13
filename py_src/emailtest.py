@@ -6,7 +6,7 @@ message = f.read()
 
 
 port = 465
-password = "Joel7Zoe1%"
+password = "python##69"
 
 context = ssl.create_default_context()
 
@@ -27,6 +27,12 @@ with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
     server.sendmail(sender_email, receiver_email, message)
 
 receiver_email = "abernhard@student.ethz.ch"
+
+with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
+    server.login("joeldevbirrer@gmail.com", password)
+    server.sendmail(sender_email, receiver_email, message)
+
+receiver_email = "ehaenni@student.ethz.ch"
 
 with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
     server.login("joeldevbirrer@gmail.com", password)

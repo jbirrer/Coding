@@ -1,9 +1,6 @@
 package src;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
-import java.io.PrintStream;
 import java.util.*;
 
 public class bigBill {
@@ -34,17 +31,16 @@ public class bigBill {
                         if (p.due != 0) {
                             if (r.gets > p.due) {
                                 r.gets = r.gets - p.due;
-                                end += p.name + " muss " + p.due + " an " + r.name + " zahlen." + " \n";
-                                System.out.println(p.name + " muss " + p.due + " an " + r.name + " zahlen.");
+                                end += p.name + " muss " + Math.round(p.due) + " an " + r.name + " zahlen." + " \n";
+                                System.out.println(p.name + " muss " + Math.round(p.due) + " an " + r.name + " zahlen.");
                                 p.due = 0;
                             } else if (r.gets == p.due) {
-                                System.out.println(p.name + " muss " + r.gets + " an " + r.name + " zahlen.");
-                                end += p.name + " muss " + r.gets + " an " + r.name + " zahlen." + " \n";
+                                System.out.println(p.name + " muss " + Math.round(r.gets) + " an " + r.name + " zahlen.");
+                                end += p.name + " muss " + Math.round(r.gets) + " an " + r.name + " zahlen." + " \n";
                             } else {
-                              
                                 p.due = p.due - r.gets;
-                                System.out.println(p.name + " muss " + r.gets + " an " + r.name + " zahlen.");
-                                end += p.name + " muss " + r.gets + " an " + r.name + " zahlen." + "\n";
+                                System.out.println(p.name + " muss " + Math.round(r.gets) + " an " + r.name + " zahlen.");
+                                end += p.name + " muss " + Math.round(r.gets) + " an " + r.name + " zahlen." + "\n";
                                 r.gets = 0;
                             }
                         }
@@ -83,3 +79,6 @@ public class bigBill {
         }
     }
 }
+
+
+
